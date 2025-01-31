@@ -1,4 +1,18 @@
-*{
+.icon-1 , .bi-arrow-right-square
+.bi-arrow-right-square:hover, .icon-1:hover
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Origins website</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<style>
+    *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -40,33 +54,8 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 17px;
-    /* update for undln */
-   
-}
-
-li ,a{
-    cursor: pointer;
-    position: relative;
 
 }
-li a::after{
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    height: 1px;
-    width: 100%;
-    left:0;
-    background-color: #fff;
-    transition: 0.5s;
-    transition-timing-function: ease-out;
-    transform: scaleX(0);
-}
- li a:hover::after{
-    transform: scaleX(1);
-    
-}
-
-
  .bi-person{
     color: #fff;
     
@@ -232,39 +221,88 @@ li a::after{
     
 }
 
-.icon-1 ,.bi-arrow-right-square{
+.icon-1 , .bi-arrow-right-square{
     font-size: 30px;
     transition: transform 0.3s ease, color 0.3s ease;
     cursor: pointer;
     color: #fff; /* Default color */
 }
 
-.bi-arrow-right-square:hover, .icon-1:hover  {
+.bi-arrow-right-square:hover, .icon-1:hover {
     transform: scale(1.2); /* Slightly enlarge */
     color: #ffcc00; /* Change color on hover */
 }
-.mainimg{
-    margin: 50px;
-    
 
-}
-.img-1{
-display: flex;
-border-radius: 30px;
-}
-.img-2{
-    display: flex;
-}
-.img-3{
-    display: flex;
-}
- .mainimg  .img-2{
-    display: flex;
-    justify-content: right;
-    padding: 30px;
-
- }
- .t1 , .t2 , .t3{
-padding:30px;
+ .mainimg{
+    transform: scale(0.4);
+   display: flex;
+   justify-content: center;
+   /* justify-content: space-between; */
+   gap:60px;
  }
 
+</style>
+</head>
+<body>
+  <div class="container">
+<video autoplay loop muted plays-inline class="back-video">
+  <source src="images/video.mp4.mp4" type="video/mp4">
+</video>
+
+
+              <nav>
+               <img src="images/WhatsApp Image 2025-01-25 at 11.21.28_22a35d8a.jpg" class="logo">
+               <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">MATERNITY</a></li>
+                <li><a href="#">CONTACT</a></li>
+               </ul>
+               <a href="#"><i class="bi bi-person"></i></a>
+              </nav>
+              <div class="content">
+                <h2>WELCOME TO</h2>
+                <h1>ORIGINS</h1>
+                <h3>YOUR PARENTHOOD JOURNEY STARTS HERE!</h3>
+                <button class="abtn"><a href="#">Book Appointment</a></button>
+
+              </div>
+  </div>
+
+<!-- Page 2 -->
+<div class="container-2">
+  <div class="sub-2">
+    <h2>ABOUT US</h2>
+  </div>
+  <div class="h3">At Origins Hospital, we are dedicated to helping individuals and couples achieve their dream of parenthood through cutting-edge <br>IVF treatments, compassionate care, and unwavering support. Learn more about us.</div>
+  <!-- icons -->
+  <div class="icons">
+    <div class="icon-1"><i class="bi bi-arrow-right-square" style="font-size: 30px;">6+ Years of Experience</i></div>
+    <div class="icon-1"><i class="bi bi-arrow-right-square" style="font-size: 30px;"></i>24/7 Medical service</div>
+    <div class="icon-1"><i class="bi bi-arrow-right-square" style="font-size: 30px;"></i>Team of Specialists</div>
+    <div class="icon-1"><i class="bi bi-arrow-right-square" style="font-size: 30px;"></i>Best Fertility Center</div>
+  </div> 
+  <!-- icons end -->
+  
+  <!-- images -->
+
+<div class="mainimg">
+<div><img src="images/7-Tips-to-a-Perfect-Lining-for-Embryo-Transfer (1).webp"></div>
+<div><img src="images/7-Tips-to-a-Perfect-Lining-for-Embryo-Transfer (1).webp"></div>
+<div><img src="images/7-Tips-to-a-Perfect-Lining-for-Embryo-Transfer (1).webp"></div>
+</div>
+<!-- images end -->
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
