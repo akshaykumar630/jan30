@@ -225,12 +225,17 @@ li a::after{
 
 .icons {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     color: #fff;
     font-size: larger;
     gap: 30px;
     
+}
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .icon-1 ,.bi-arrow-right-square{
